@@ -109,11 +109,11 @@ const SideNav: React.FC<Props> = (props: Props): ReactElement => {
           onClick={() => {
             props.clearCanvas();
           }}
-          style={{ margin: "2rem 7rem" }}
+          style={{ margin: "2rem auto" }}
         >
           Clear Canvas
         </ClearButton>
-        <ItemText style={{ marginTop: "10rem" }}>Zoom</ItemText>
+        <ItemText>Zoom</ItemText>
         <Slider>
           <input
             type="range"
@@ -128,7 +128,7 @@ const SideNav: React.FC<Props> = (props: Props): ReactElement => {
           />
         </Slider>
         <ItemText>Speed</ItemText>
-        <Slider>
+        <Slider style={{ bottom: "1rem" }}>
           <input
             type="range"
             className="slider"

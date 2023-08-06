@@ -19,7 +19,7 @@ const Slider = styled.div`
     height: 25px;
     background-color: transparent;
     border: none;
-    padding-left:80px;  
+    margin:0 auto; 
     input{
         outline:none;
     }

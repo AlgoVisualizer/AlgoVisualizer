@@ -8,9 +8,9 @@ const Header = () => {
   return (
     <div className="header-container">
       <div className="header-heading-container">
-        <div className="header-heading">Algo Visualizer</div>
-        <div style={{marginLeft:"40rem"}}>
-          <Button onClick={()=>openUrl("/graph")}>Graph</Button>
+        <div className="header-heading" style={{ fontFamily: "monospace" }}>Algo Visualizer</div>
+        <div style={{ display: 'flex-end' }}>
+          <Button onClick={() => openUrl("/graph")}>Graph</Button>
         </div>
       </div>
     </div>

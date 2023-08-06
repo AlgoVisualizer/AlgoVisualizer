@@ -5,13 +5,16 @@
   padding: 10px;
   background-color: #0D1929;
 }
+
 .header-heading-container {
   text-align: center;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
 }
+
 .header-heading {
   font-family: "monospace";
   font-size: 30px;
-  margin-left: 50rem;
+  width: "90%";
+  margin: auto;
 }

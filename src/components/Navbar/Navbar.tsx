@@ -19,13 +19,16 @@ const Navbar: React.FC<NavbarProps> = (props: NavbarProps): ReactElement => {
 
   return (
     <Container >
-      <div style={{ fontSize: "30px", fontFamily: 'monospace',marginLeft:"45rem" }}>
-        Algo Visualizer
+      <div style={{ width: "90%", display: "flex", justifyContent: "center" }}>
+
+        <div style={{ fontSize: "30px", fontFamily: 'monospace', width: "90%" }}>
+          Algo Visualizer
+        </div>
+        <div>
+          <HelpIcon onClick={() => props.onHelpClick()}></HelpIcon>
+        </div>
       </div>
-      <div>
-        <HelpIcon onClick={() => props.onHelpClick()}></HelpIcon>
-      </div>
-      <div style={{marginLeft:"40rem"}}>
+      <div style={{}}>
         <Button onClick={() => openUrl("/sorting")}>Sorting</Button>
       </div>
     </Container>
