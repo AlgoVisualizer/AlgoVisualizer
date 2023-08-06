@@ -32,7 +32,7 @@ interface Props {
 const GraphNode: React.FC<Props> = (props: Props): ReactElement => {
   const initialPosition = props.initialPosition;
   const [position, setPosition] = useState<Position>(
-    initialPosition ?? {top: 100, left: 100}
+    initialPosition ?? { top: 100, left: 100 }
   );
   const [isContextMenuVisible, setIsContextMenuVisible] = useState<boolean>(
     false
@@ -185,7 +185,7 @@ const GraphNode: React.FC<Props> = (props: Props): ReactElement => {
         {(props.nodeIndex + 1).toString()}
         {props.children}
         <Information ref={infoRef} zoomPercentage={props.zoomPercentage}>
-          <div>
+          {/* <div>
             {'SP: ' +
               (props.nodeInfo.shortestPath === undefined
                 ? '∞'
@@ -196,7 +196,7 @@ const GraphNode: React.FC<Props> = (props: Props): ReactElement => {
               (props.nodeInfo.previousNode === undefined
                 ? '∞'
                 : props.nodeInfo.previousNode + 1)}
-          </div>
+          </div> */}
         </Information>
       </Container>
       <ContextMenu

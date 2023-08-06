@@ -32,9 +32,9 @@ const ToolTip = styled.div<Props>`
     border-style: solid;
     border-color: transparent transparent
       ${(props) =>
-        props.theme.name === 'dark'
-          ? themes.light.navbar.background
-          : themes.dark.navbar.background}
+    props.theme.name === 'dark'
+      ? themes.light.navbar.background
+      : themes.dark.navbar.background}
       transparent;
   }
 `;

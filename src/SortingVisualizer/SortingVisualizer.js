@@ -6,7 +6,12 @@ import "./SortingVisualizer.css";
 
 function SortingVisualizer() {
   return (
-    <div className="main-container">
+    <div className="main-container" style={{
+      width: "100wh",
+      textAlign: "center",
+      height: "100vh",
+      overflow: "hidden",
+    }}>
       <div>
         <Header />
       </div>

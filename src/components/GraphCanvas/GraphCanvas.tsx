@@ -1,4 +1,4 @@
-import React, {ReactElement, useRef, useState} from 'react';
+import React, { ReactElement, useRef, useState } from 'react';
 import Container from './Container';
 import GraphNode from '../GraphNode/GraphNode';
 import Edge from '../Edge/Edge';
@@ -74,7 +74,7 @@ const GraphCanvas: React.FC<Props> = (props: Props): ReactElement => {
       {adjacencyList.map((val: Array<number>, index: number) => {
         const nodeInfo: NodeInfo =
           index > props.graphInfo.length - 1
-            ? ({shortestPath: undefined, previousNode: undefined} as NodeInfo)
+            ? ({ shortestPath: undefined, previousNode: undefined } as NodeInfo)
             : props.graphInfo[index];
 
         const onDelete = () => {
@@ -132,7 +132,7 @@ const GraphCanvas: React.FC<Props> = (props: Props): ReactElement => {
         isVisible={isContextMenuVisible}
         position={contextMenuPosition}
         setIsVisible={(val: boolean) => {
-          setContextMenuPosition({top: -100, left: -100});
+          setContextMenuPosition({ top: -100, left: -100 });
           setIsContextMenuVisible(val);
         }}
         canvasRef={canvasRef}
@@ -142,7 +142,7 @@ const GraphCanvas: React.FC<Props> = (props: Props): ReactElement => {
             props.addNewNode();
             setIsContextMenuVisible(false);
             setTimeout(
-              () => setContextMenuPosition({top: -100, left: -100}),
+              () => setContextMenuPosition({ top: -100, left: -100 }),
               0
             );
           }}
@@ -153,7 +153,7 @@ const GraphCanvas: React.FC<Props> = (props: Props): ReactElement => {
           onClick={() => {
             props.clearCanvas();
             setIsContextMenuVisible(false);
-            setContextMenuPosition({top: -100, left: -100});
+            setContextMenuPosition({ top: -100, left: -100 });
           }}
         >
           Clear canvas
