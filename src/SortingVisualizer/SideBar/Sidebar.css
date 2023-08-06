@@ -1,0 +1,25 @@
+.sidebar-container {
+  flex-basis: 22%;
+}
+
+.controller-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-basis: 30%;
+  background-color: var(--sidebar_background);
+  height: 95vh;
+  /* border-top: 1px solid var(--body_background); */
+  /* padding-top: 20px; */
+}
+
+.sliders-container {
+  margin: 5% auto;
+  width: fit-content;
+}
+.github-logo-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+  align-items: center;
+}
